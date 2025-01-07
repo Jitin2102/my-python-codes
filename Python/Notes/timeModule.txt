@@ -1,0 +1,10 @@
+The time.time() Function
+The Unix epoch is a time reference commonly used in programming: 12 am
+on January 1, 1970, Coordinated Universal Time (UTC). The time.time()
+            
+function returns the number of seconds since that moment as a float value
+               
+(Recall that a float is just a number with a decimal point.) This number is 
+           
+called an epoch timestamp
+ 

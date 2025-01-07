@@ -1,0 +1,2 @@
+how to gather user info and save it in a csv file when he visits ot our page 
+page no 319 AUTOMATE THE BORING STUFF

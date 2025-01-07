@@ -1,0 +1,40 @@
+Date: 5/1/2025
+Time: 16:38
+Phone Number: +919120810343
+Message: Hello, this is a test message from Python!
+--------------------
+Date: 5/1/2025
+Time: 16:42
+Phone Number: +919120810343
+Message: Hello, this is an automated message from Python!
+--------------------
+Date: 5/1/2025
+Time: 16:56
+Phone Number: +919120810343
+Message: Hello, this is an automated message from Python!
+--------------------
+Date: 5/1/2025
+Time: 17:0
+Phone Number: +919120810343
+Message: Hello, this is an automated message from Python!
+--------------------
+Date: 5/1/2025
+Time: 17:5
+Phone Number: +919120810343
+Message: Hello, this is an automated message from Python!
+--------------------
+Date: 6/1/2025
+Time: 11:7
+Phone Number: +919455511756
+Message: Hello, this is an automated message from Python!
+--------------------
+Date: 6/1/2025
+Time: 11:10
+Phone Number: +919455511756
+Message: Hello, this is an automated message from Python!
+--------------------
+Date: 6/1/2025
+Time: 11:12
+Phone Number: +919455511756
+Message: Hello, this is an automated message from Python!
+--------------------

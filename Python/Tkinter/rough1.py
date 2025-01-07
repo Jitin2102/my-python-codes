@@ -1,0 +1,32 @@
+import tkinter as tk
+from tkinter import messagebox as m
+root=tk.Tk()
+root.geometry("500x400")
+root.title('My First Experiment')
+fonts=("Time New Roman",18,"bold")
+fonts1=("Time New Roman",10,"bold")
+def showinfo():
+    m.showinfo("Notice","It is only starting work.Sorry for any mistsake.")
+tvar=tk.StringVar()
+button=tk.Button(root,text="Touch me smoothly!",font=fonts1,command=lambda:label2.config(text="\nThis is my first label."))
+button.pack(pady=10)
+button1=tk.Button(root,text="Touch me ",font=fonts1,command=showinfo)
+button1.pack(pady=5)
+list=tk.Listbox(root)
+list.pack()
+list.insert(0,"1.Manoj")
+list.insert(1,"2.Suresh")
+list.insert(2,"3.Mahesh")
+list.insert(3,"4.Girish")
+list.insert(4,"5.Siri")
+# infoLabel=tk.Label(root,textvar=tvar,fg="red",font=fonts1,relief="flat")
+# tvar.set("I bow down in your legs.")
+#infoLabel.pack(pady=10)
+label2=tk.Label(root,text="",font=fonts,fg="green")
+label2.pack()
+canva=tk.Canvas(root,width=200,height=100,bg="yellow")
+canva.pack()
+canva.create_rectangle(100,150,100,200)
+
+
+root.mainloop()    
