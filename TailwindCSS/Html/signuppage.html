@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignupPage</title>
+    <style>
+        body{
+            background: linear-gradient(rgb(89, 68, 152), rgb(188, 213, 235));   
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 5px;
+            align-items: center;           
+        }
+        header{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            color: rgb(14, 50, 105);
+            text-align: center;
+        }
+        main{
+            background: linear-gradient(rgb(89, 68, 152), rgb(188, 213, 235));
+            border: 2px solid rgb(21, 22, 22);
+            display: flex;
+            flex-direction:column;
+            margin : 10px;
+            align-items: center;
+        }
+        div{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+            color: rgb(188, 213, 235);
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        div label{
+            font-size: 20px;
+            color: rgb(13, 13, 14);
+        }
+        div input{
+            font-size: 20px;
+            color: rgb(14, 14, 14);
+        }
+        div button{
+            background-color: rgb(65, 129, 223);
+            font-size: 20px;
+            color: rgb(231, 234, 231);
+        }
+        footer{
+            margin:50px;
+            justify-content: center ;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h3>SignUp</h3>
+    </header>
+    <main>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" email="email" placeholder="">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" password="password" placeholder="">
+        </div>
+        <div>
+            <button type="reset" onclick="resetForm()">Cancel</button>
+            <button type="submit" onclick="submitForm()">SignUp</button>
+            <script>
+                function resetForm() {
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("password").value = "";
+                }
+
+                function submitForm() {
+                    alert("You have become a unique member of our community!");
+                }
+            </script>
+        </div>
+        <div>
+            <p style="font-family: 'Times New Roman', Times, serif;color:black" >---------------Access Quickly--------------</p>
+            
+            <a href="https://www.google.com/" style="background-color: rgb(65, 129, 223); font-size: 20px; color: rgb(231, 234, 231); padding: 10px; text-decoration: none; border-radius: 5px;">Google</a>
+            <a href="https://www.linkedin.com/" style="background-color: rgb(65, 129, 223); font-size: 20px; color: rgb(231, 234, 231); padding: 10px; text-decoration: none; border-radius: 5px;">LinkedIn</a>
+            
+        </div>  
+
+    </main>
+    <footer>
+        <p>Already have an account? <a href="loginpage.html">Login</a></p>
+    </footer>
+    
+</body>
+</html>

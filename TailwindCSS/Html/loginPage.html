@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginpage</title>
+    <style>
+        body{
+            background: linear-gradient(to right, #85FFBD, #FFFB7D);
+            display:flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 5px;
+            align-items: center;
+            justify-content: center;
+        }
+        header{
+            display:flex;
+            flex-direction: row;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            color: rgb(20, 81, 171);
+            text-align: center;
+        }
+        main{
+            background: linear-gradient(to bottom, #85FFBD, #FFFB7D);;
+            border: 2px solid rgb(21, 22, 22);
+            display: flex;
+            flex-direction:column;
+            margin : 10px;
+            align-items: center;
+        }
+        .div{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+            color: rgb(240, 231, 240);
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+        .div label{
+            font-size: 20px;
+            color: rgb(45, 77, 141);
+        }
+        .div input{
+            font-size: 20px;
+            color: rgb(45, 77, 141);
+        }
+        .div button{
+            background-color: seagreen;
+            font-size: 20px;
+            color: rgb(45, 77, 141);
+        }
+        footer{
+            margin:50px;
+            justify-content: center ;
+            color: rgb(20, 81, 171);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        function handleLogin() {
+            alert('Login button clicked!');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h3>Login</h3>
+    </header>
+     
+    <main>
+        <div class="div">
+            <label for="username">UserName :</label>
+            <input type="text" id="username" name="username" placeholder="">
+        </div>
+        <div class="div">
+            <label for="password">Password :</label>
+            <input type="password" id="password" name="password" placeholder="">
+        </div>        
+        <div class="div">
+            <button type="button" onclick="handleLogin()">Login</button>
+            <p style="color: rgb(45, 77, 141);"> Don't have an account <a style="color:rgb(153, 53, 60);" href="http://127.0.0.1:5500/Html/signuppage.html">SignUp</a></p>
+        </div>
+    </main>
+    <footer>
+        <p>Thanks for visiting my page</p>
+    </footer>   
+</body>
+</html>

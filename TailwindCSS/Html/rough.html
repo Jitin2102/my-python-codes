@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #85FFBD, #FFFB7D);
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        header {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 29px;
+            color: #144FB4;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .main {
+            background-color: #2E9A3F;
+            display: flex;
+            flex-direction: column;
+            margin: 18px;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .div {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+            color: #F0E7F0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .div label {
+            font-size: 20px;
+            color: #0C0C0C;
+        }
+        .div input {
+            font-size: 20px;
+            color: #101010;
+            margin-bottom: 10px;
+            animation: placeholderSlide 0.3s ease-in-out;
+        }
+        @keyframes placeholderSlide {
+            from { margin-left: -100px; opacity: 0; }
+            to { margin-left: 0; opacity: 1; }
+        }
+        .div button {
+            background-color: seagreen;
+            font-size: 20px;
+            color: #171C19;
+            transition: background-color 0.3s ease;
+        }
+        .div button:hover {
+            background-color: lightgreen;
+        }
+        .toggle-password {
+            margin-top: -10px;
+            font-size: 14px;
+            cursor: pointer;
+            color: #F0E7F0;
+        }
+        footer {
+            margin: 50px;
+            justify-content: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            animation: fadeIn 2s;
+        }
+        .footer-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .footer-icons a {
+            color: #171C19;
+            font-size: 24px;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            if (username == "" || password == "") {
+                alert("Both fields must be filled out");
+                return false;
+            } else {
+                alert("Form submitted successfully!");
+                return true;
+            }
+        }
+        
+        function showSignUpPopup() {
+            alert("Sign Up functionality coming soon!");
+        }
+        
+        function togglePasswordVisibility() {
+            const passwordField = document.getElementById("password");
+            const toggleCheckbox = document.getElementById("toggle-password");
+            if (toggleCheckbox.checked) {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <p>Welcome To My Page</p>
+    </header>
+ 
+    <main>
+        <div class="div">
+            <label for="username">UserName </label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+        </div>
+        <div class="div">
+            <label for="password">Password </label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+            <div class="toggle-password">
+                <input type="checkbox" id="toggle-password" onclick="togglePasswordVisibility()">
+                <label for="toggle-password">Show Password</label>
+            </div> 
+        </div>
+        <div class="div">
+            <button type="button" onclick="validateForm()">Submit</button>
+            <p>Don't have an account 
+                <button type="button" onclick="showSignUpPopup()">SignUp</button>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>Thanks for visiting my page</p>
+        <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer> 
+</body>
+</html>
+
+
+
+
