@@ -1,0 +1,5 @@
+f= open("newfile.txt", "r")
+text = f.read()
+print(text)
+print("File read successfully.")
+f.close()
